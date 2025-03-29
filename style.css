@@ -18,7 +18,8 @@
 
 /* Styling the photo on the left */
 .photo {
-  width: 40vw;   /* Image takes 40% of the viewport width */
+  align-items: left;
+  width: 10vw;   /* Image takes 40% of the viewport width */
   height: auto; 
   max-height: 90vh;
   object-fit: cover; 
