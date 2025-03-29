@@ -18,6 +18,27 @@ html {
 
 }
 
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    overflow: hidden;
+}
+
+#photo {
+    width: 40vw; /* Adjust the width to fit on the left */
+    height: 100vh; 
+    object-fit: cover; /* Ensures the image covers the section nicely */
+}
+
+#text {
+    width: 50vw;
+    padding: 40px;
+    color: #333;
+}
+
 
 
 .box {
