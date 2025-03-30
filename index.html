@@ -32,8 +32,59 @@
 
 <body>
     
-    <!-- home function -->
     <div id="header">
+        <div class="container box">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Achievements">Case studies</a></li>
+                    <li><a href="architecture.html">Information Architecture</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    
+            <div class="header-content">
+                <!-- Photo on the left -->
+                <div class="header-photo">
+                    <img src="images/dp.jpg" alt="Nagaraju Kanubuddi" class="profile-img">
+                </div>
+                
+                <!-- Text content on the right -->
+                <div class="header-text">
+                    <div class="loader animate__animated animate__slideInDown">
+                        <!-- Your snow animation code -->
+                    </div>
+                    <div class="loaader animate__animated animate__slideInDown">
+                        <!-- Your snow animation code -->
+                    </div>
+                    <div class="setdiv animate__animated animate__slideInUp">
+                        <h2>Hi, I'm <br></h2>
+                        <h1><span>Nagaraju <br> Kanubuddi</span></h1>
+                        <p>Grad Student 🧑‍💻 - Software Engineer 💻 - <br> UI/UX Architect - React.js & Figma Expert</p>
+                        
+                        <div class="wrapper">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="shadow"></div>
+                            <div class="shadow"></div>
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="notification" onclick="window.location.href = 'https://drive.google.com/file/d/1GnqZwHjHleHNMoRDXvIMMZ4fqLpoqfD7/view?usp=sharing';">
+                <p>Would you like to check my Resume ?😊</p>
+                <span class="notification__progress"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="header">
         <div class="container box">
             <nav>
                 
@@ -130,7 +181,7 @@
 
 
         </div>
-    </div>
+    </div> -->
 
     <script src="Section-Home/menu.js"></script>
 
@@ -145,40 +196,7 @@
     </span>
 </div>
 
-<!-- Information Architecture Section -->
-<section id="information-architecture">
-    <h2>Information Architecture</h2>
-    <p>
-        The information architecture (IA) of the website is designed to ensure seamless navigation and a user-friendly experience. It organizes content in a logical structure that allows users to easily find and access information. The IA includes key elements such as:
-    </p>
-    <ul>
-        <li><strong>Navigation Structure:</strong> Clear, easy-to-navigate menus and submenus.</li>
-        <li><strong>Content Hierarchy:</strong> Content is prioritized based on importance and user needs.</li>
-        <li><strong>Search Functionality:</strong> A well-integrated search bar to help users find content quickly.</li>
-        <li><strong>Wireframes:</strong> Initial wireframes that outline the layout and interaction flow of the website.</li>
-    </ul>
-    <p>
-        The goal of the IA is to create a logical and straightforward structure that enhances the user's journey while maintaining clarity and ease of use.
-    </p>
-</section>
 
-<!-- Design Section -->
-<section id="design">
-    <h2>Design</h2>
-    <p>
-        The design of the portfolio is centered around creating an engaging and aesthetically pleasing user experience. The key design principles are:
-    </p>
-    <ul>
-        <li><strong>Minimalist Design:</strong> Clean, uncluttered interface to emphasize content.</li>
-        <li><strong>Responsive Design:</strong> The design adapts to various screen sizes, ensuring a seamless experience on desktop, tablet, and mobile.</li>
-        <li><strong>Consistent Visual Elements:</strong> A cohesive use of colors, typography, and icons to create a unified look and feel.</li>
-        <li><strong>Intuitive Interactions:</strong> Easy-to-use components, like buttons and forms, that respond effectively to user inputs.</li>
-        <li><strong>UI Patterns:</strong> Reusable design patterns to enhance usability, including navigation bars, footers, and action buttons.</li>
-    </ul>
-    <p>
-        These design principles were implemented to align with user expectations and improve the overall user experience, making the navigation intuitive and the interface visually appealing.
-    </p>
-</section>
 
 <script src="Section-Home/Scroll-Top.js"></script>
 
@@ -323,21 +341,117 @@
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span class="Education"><b>Looking For Intership and Full Time Oppurtunities</b> </span><br>
-
+                            <!-- Experience Section -->
+                            <li>
+                                <span class="experience-title"><b>Experience</b></span>
+                                <ul class="experience-list">
+                                    <!-- Intern at Front Lines Media -->
+                                    <li>
+                                        <span class="job-title">Intern</span><br>
+                                        <span class="company">Front Lines Media</span><br>
+                                        <span class="date">Feb '25 — Present</span>
+                                        <ul class="job-description">
+                                            <li>Spearheaded innovative UI/UX designs for AI-powered healthcare, fintech applications, enhancing accessibility and engagement.</li>
+                                            <li>Conducted in-depth user research, usability testing, and behavior analysis to create data-driven design improvements.</li>
+                                            <li>Developed interactive prototypes, reducing development time by 30% through well-structured design systems.</li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <!-- Intern at Intellipaat -->
+                                    <li>
+                                        <span class="job-title">Intern in Business Support</span><br>
+                                        <span class="company">Intellipaat</span><br>
+                                        <span class="date">Dec '22 — May '24</span>
+                                        <ul class="job-description">
+                                            <li>Provided technical support and troubleshooting for enterprise applications, boosting efficiency and customer satisfaction.</li>
+                                            <li>Analyzed UI/UX pain points, leading to a 25% improvement in user navigation and overall system responsiveness.</li>
+                                            <li>Assisted in implementing user-centered design principles, ensuring accessibility compliance and enhanced usability.</li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <!-- Operations Specialist -->
+                                    <li>
+                                        <span class="job-title">Operations Specialist</span><br>
+                                        <span class="company">Intellipaat</span><br>
+                                        <span class="date">Aug '22 — Dec '23</span>
+                                        <ul class="job-description">
+                                            <li>Optimized Cross-Functional Processes: Coordinated between product, design, and support teams to streamline workflows.</li>
+                                            <li>Improved User Experience: Collaborated with UI/UX and product teams to integrate user feedback.</li>
+                                            <li>Data-Driven Product Strategy: Analyzed user behavior and platform performance metrics to inform decision-making.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Looking For Opportunities Section -->
+                            <li>
+                                <span class="Education"><b>Looking For Internship and Full Time Opportunities</b></span><br>
                                 <p>Check Out My Resume</p>
-                                <button class="button"
-                                    onclick="window.location.href = 'https://drive.google.com/file/d/1kLgjjzp-QV0_T0wh7G2JMoD9wPOvtpkG/view?usp=sharing';">
+                                <button class="button" onclick="window.location.href = 'https://drive.google.com/file/d/1GnqZwHjHleHNMoRDXvIMMZ4fqLpoqfD7/view?usp=sharing';">
                                     <span class="button_lg">
                                         <span class="button_sl"></span>
                                         <span class="button_text">Download Now</span>
                                     </span>
                                 </button>
-
-
-                            </li><br>
+                            </li>
                         </ul>
                     </div>
+                    
+                    <style>
+                        .tab-contents ul {
+                            list-style-type: none;
+                            padding-left: 0;
+                        }
+                        
+                        .experience-title {
+                            font-size: 1.2em;
+                            color: #333;
+                            display: block;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .experience-list {
+                            margin-bottom: 30px;
+                        }
+                        
+                        .experience-list > li {
+                            margin-bottom: 25px;
+                            padding-bottom: 15px;
+                            border-bottom: 1px solid #eee;
+                        }
+                        
+                        .job-title {
+                            font-weight: bold;
+                            color: #2c3e50;
+                            font-size: 1.1em;
+                        }
+                        
+                        .company {
+                            font-weight: 600;
+                            color: #3498db;
+                        }
+                        
+                        .date {
+                            color: #7f8c8d;
+                            font-size: 0.9em;
+                        }
+                        
+                        .job-description {
+                            margin-top: 10px;
+                            padding-left: 20px;
+                        }
+                        
+                        .job-description li {
+                            margin-bottom: 5px;
+                            color: #555;
+                            list-style-type: disc;
+                        }
+                        
+                        /* Keep your existing button styles */
+                        .button {
+                            margin-top: 10px;
+                        }
+                    </style>
 
                 </div>
                 <div class="col-2">
@@ -446,8 +560,37 @@
             
 
                 <div class="skills">
+                    <div class="skills">
 
-                    <div class="wrapperd">
+                        <div class="wrapperd">
+                            <div class="carded java">
+                                <div class="circled">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Figma & UI/UX Design</div>
+                            </div>
+    
+                            <div class="carded as">
+                                <div class="circled">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Canva & Photo Editing</div>
+                            </div>
+    
+                            <div class="carded firebase">
+                                <div class="circled">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Sketch & Adobe</div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <!-- <div class="wrapperd">
                         <div class="carded figma">
                             <div class="circled">
                                 <div class="bar"></div>
@@ -464,10 +607,10 @@
                             <div class="text">Canva & Photo Editing</div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
 
-                <h2>UI/UX Skills</h2>
+                
             </div>
 
 
@@ -659,181 +802,17 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="card"
-                        onclick="window.location.href = 'https://github.com/Sumonta056/SUST-Autorickshaw-Management-System';">
-                        <div class="card8">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/auto.gif" width="190">
-                                <span class="p_hcolor ggwp"> (SUST) AutoRickshaw Management System </span>
-                                <p>
-                                    Website of AutoRickshaw Management System of SUST
-                                </p>
-                                <p>
-
-                                    <b><span class="p_color">Frontend :</span></b> Vanila JS  , CSS , HTML<br>
-                                    <b><span class="p_color">Database :</span></b> MySQL , PHP
-                                </p>
-
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card" onclick="window.location.href = 'https://github.com/Sumonta056/Rent_IT-App';">
-                        <div class="card2">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/rent.gif" width="190">
-                                <span class="p_hcolor">Rent IT</span>
-                                <p>
-                                    Online based products like clothes, furniture, electronics etc rent app
-                                </p>
-                                <p>
-                                    <b><span class="p_color">Langauge :</span></b> Java <br>
-                                    <b><span class="p_color">Environment :</span></b> Android Studio <br>
-                                    <b><span class="p_color">Database :</span></b> Firebase
-                                </p>
-
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card" onclick="window.location.href = 'https://github.com/Sumonta056/Survive-IT';">
-                        <div class="card4">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/hero.gif" width="190">
-                                <span class="p_hcolor">Survive It</span>
-                                <p>
-                                    A hero survival game in mystery land and killing enemy with abilities
-                                </p>
-                                <p>
-                                    <b><span class="p_color">Langauge :</span></b> Java <br>
-                                    <b><span class="p_color">Environment :</span></b> IntelIJ <br>
-                                    <b><span class="p_color">Framework :</span></b> LibGDX
-                                </p>
-
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card"
-                        onclick="window.location.href = 'https://github.com/Sumonta056/Survival-of-Warrior';">
-                        <div class="card5">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/hero1.gif" width="190">
-                                <span class="p_hccolor">Survival Of Warrior</span>
-                                <p>
-                                    Fight with enemy and survive as many time as possible
-                                </p>
-                                <p>
-                                    <b><span class="p_color">Langauge :</span></b> C++ <br>
-                                    <b><span class="p_color">Environment :</span></b> Visual Studio <br>
-                                    <b><span class="p_color">Framework :</span></b> Igraphics
-                                </p>
-
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" onclick="window.location.href = 'https://github.com/Sumonta056/EVA_BOT';">
-                    <div class="card7">
-                        <div class="position">
-                            <img align="center" class="icon" src="images/bot.gif" width="190">
-                            <span class="p_hccolor">Eva Talking Bot</span>
-                            <p>
-                                A virtual bot that talks with you and makes your daily life much easier by
-                                doing things for you
-                            </p>
-                            <p>
-                                <b><span class="p_color">Langauge :</span></b> Python <br>
-                                <b><span class="p_color">Environment :</span></b> Pycharm <br>
-                            </p>
-
-                            <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="card" onclick="window.location.href = 'https://github.com/Sumonta056/Code-Library';">
-                        <div class="card3">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/code.gif" width="190">
-                                <span class="p_hccolor">Code Library C++</span>
-                                <p>
-                                    Store house of almost everything related to learn C++.
-                                    Data Structure , algorithm, OOP, CP tips
-                                </p>
-                                <p>
-                                    <b><span class="p_color">Langauge :</span></b> C++<br>
-                                    <b><span class="p_color">Environment :</span></b> VS Code <br>
-                                </p>
-
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="card" onclick="window.location.href = 'https://sumonta056.github.io/GitHub-Tutorial/';">
-                        <div class="card60">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/git.gif" width="190">
-                                <span class="p_hcccolor">GitHub Guru Website</span>
-                                <p>
-                                    A website for help learning & covering everything
-                                     you need to know about Git and GitHub, solving of git realated problems.
-                                </p>
-                                <p>
-                                    <b><span class="p_color">Langauge :</span></b> HTML , Markdown<br>
-                                    
-                                </p>
-
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
-                <div>
-                    <div class="card"
-                        onclick="window.location.href = 'https://github.com/Sumonta056/Student-Management-System';">
-                        <div class="card6">
-                            <div class="position">
-                                <img align="center" class="icon" src="images/books.gif" width="180">
-                                <span class="p_hcccolor">Student Management System</span>
-                                <p>
-                                    Manage students information and their marks (File Handling)
-                                </p>
-                                <p>
-                                    <b><span class="p_color">Langauge :</span></b> C++<br>
-                                    <b><span class="p_color">Environment :</span></b> VS Code <br>
+                
+                
+                
+                
 
-                                </p>
+                
 
-                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                
+                
                 <!-- <div>
                     <div class="card">
                         <div class="card8">
@@ -910,108 +889,10 @@
 
                 </div>
             </div>
-            <div class="cards3">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="images/test.png" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="name11">Idea Competition</h2>
-
-                    <p class="descriptions11">
-                        Participated in idea competition in Mobile App, Game and Job Festival 2023 hosted
-                        By Skill Development for Mobile Game & Application Project,
-                        ICT Division, Govt. of Bangladesh and organized by SUST .<br>
-
-
-
-                        - Made it to top 6
-                    </p>
-
-                    <button class="button" onclick="window.location.href = 'https://youtu.be/aDQ8eV9iVxQ?t=2353';">
-                        <span class="button_lg">
-                            <span class="button_sl"></span>
-                            <span class="button_text">read more </span>
-                        </span>
-                    </button>
-
-
-                </div>
-            </div>
+            
 
         </div>
-        <div class="achievement1">
-            <div class="card11">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="images/pg.jpg" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="name">Photography Exhibition</h2>
-                    <p class="description">My photo got selected for final round of (among 150+ photos) Photo
-                        Exhibition in exCEEd Manifestation
-                        Organized by Department of Civil and Environmental Engineering(CEE), SUST <br>
-
-                    </p>
-                    <button class="button"
-                        onclick="window.location.href = 'https://www.linkedin.com/feed/update/urn:li:activity:7037990921178681344/';">
-                        <span class="button_lg">
-                            <span class="button_sl"></span>
-                            <span class="button_text">read more </span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            <div class="card12">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="images/pp.jpg" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="name">Poster Presentation</h2>
-                    <p class="description"> Won 2nd price in Intra School Dewalika Competition
-                        ( Poster Presentation ) Organized by Narayanganj Ideal School
-                        Theme was Pohela Boishak and Bangla Culture
-                        <br>
-
-                    </p>
-                    <button class="button"
-                        onclick="window.location.href = 'https://m.facebook.com/story.php?story_fbid=pfbid02Buma9qrwWQ2EXi7bmgt9mLP9oY7JLgR7rFcirCcjb4f5iMuZkcu7R1fZQr1hQkdkl&id=100003312339275&mibextid=Nif5oz';">
-                        <span class="button_lg">
-                            <span class="button_sl"></span>
-                            <span class="button_text">read more </span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            <div class="card13">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="images/sc.png" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="name">Scholar-Ships</h2>
-
-                    <ul class="descriptions">
-                        <li>Secondary School Certificate (SSC) Scholarship - 2017
-
-                            ( Talent Pool
-                            8th Position in Narayanganj District )
-
-
-                        </li>
-                        <li>Junior School Certificate (JSC) Scholarship - 2014</li>
-                    </ul>
-
-
-                </div>
-            </div>
-
-        </div>
+        
 
 
     </div>
@@ -1056,31 +937,19 @@
 
     <div class="Social box">
         <div class="wrappeer">
-            <div class="icon facebook" onclick="window.location.href = 'https://www.facebook.com/sumonta.mridul/';">
-                <div class="tooltip">Facebook</div>
-                <span><i class="fab fa-facebook-f"></i> </span>
-            </div>
-            <div class="icon instagram" onclick="window.location.href = 'https://www.instagram.com/_sumonta_saha_/';">
-                <div class="tooltip">Instagram</div>
-                <span><i class="fab fa-instagram"></i> </span>
-            </div>
-            <div class="icon twitter" onclick="window.location.href = 'https://twitter.com/sumonta_saha';">
-                <div class="tooltip">Twitter</div>
-                <span><i class="fab fa-twitter"></i> </span>
-            </div>
-            <div class="icon github" onclick="window.location.href = 'https://github.com/Sumonta056';">
+            
+            
+            
+            <div class="icon github" onclick="window.location.href = 'https://github.com/Nagarajukanubuddi';">
                 <div class="tooltip">GitHub</div>
                 <span><i class="fab fa-github"></i> </span>
             </div>
             <div class="icon linkedin"
-                onclick="window.location.href = 'https://www.linkedin.com/in/sumonta-saha-mridul-b35bb61a0/';">
+                onclick="window.location.href = 'https://www.linkedin.com/in/nagarajukanubuddi';">
                 <div class="tooltip">Linkedin</div>
                 <span><i class="fab fa-linkedin"></i> </span>
             </div>
-            <div class="icon youtube" onclick="window.location.href = 'https://youtube.com/@sumontasaha5638';">
-                <div class="tooltip">YouTube</div>
-                <span><i class="fab fa-youtube"></i> </span>
-            </div>
+            
 
         </div>
 
@@ -1088,49 +957,17 @@
 
         <div class="cv box">
             <button class="button"
-                onclick="window.location.href = 'https://drive.google.com/file/d/1kLgjjzp-QV0_T0wh7G2JMoD9wPOvtpkG/view?usp=sharing';">
+                onclick="window.location.href = 'https://drive.google.com/file/d/1GnqZwHjHleHNMoRDXvIMMZ4fqLpoqfD7/view?usp=sharing';">
                 <span class="button_lg">
                     <span class="button_sl"></span>
-                    <span class="button_text">Download My CV</span>
+                    <span class="button_text">Download My Resume</span>
                 </span>
             </button>
         </div>
     </div>
 
 
-    <div class="follower box">
-        <div class="wrapperpp">
-            <div class="containerpp">
-                <i class="fa-brands fa-instagram"></i>
-                <span class="num" data-val="340">000</span>
-                <span class="text">Instagram Followers</span>
-            </div>
-
-            <div class="containerpp">
-                <i class="fa-brands fa-github"></i>
-                <span class="num" data-val="64">000</span>
-                <span class="text">GitHub Followers</span>
-            </div>
-
-            <div class="containerpp">
-                <i class="fa-brands fa-medium"></i>
-                <span class="num" data-val="33">000</span>
-                <span class="text">Medium Followers</span>
-            </div>
-
-            <div class="containerpp ">
-                <i class="fa-brands fa-linkedin"></i>
-                <span class="num" data-val="648">000</span>
-                <span class="text">Linkedin Followers</span>
-            </div>
-            <div class="containerpp">
-                <i class="fa-brands fa-unsplash"></i>
-                <span class="num" data-val="2000">000</span>
-                <span class="text">Unplash Views</span>
-            </div>
-        </div>
-
-    </div>
+    
 
 
     <script src="Section-Home/animation.js"></script>
@@ -1138,7 +975,7 @@
 
 
     <div class="end">
-        <p>© 2023 Sumonta Saha Mridul. All rights reserved.</p>
+        <p>© 2025 Nagaraju Kanubuddi. All rights reserved.</p>
     </div>
 <!-- 
     <script>

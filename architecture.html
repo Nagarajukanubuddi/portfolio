@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .portfolio-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .architecture-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .architecture-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+            border-color: #4CAF50;
+        }
+        
+        .architecture-icon {
+            font-size: 50px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        
+        .architecture-name {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .architecture-desc {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .download-note {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #4CAF50;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <h1>My Architectures</h1>
+        
+        <div class="architecture-grid">
+            <div class="architecture-card" onclick="downloadArchitecture()">
+                <i class='bx bxs-arch architecture-icon'></i>
+                <h2 class="architecture-name">P2D IA Architecture</h2>
+                <p class="architecture-desc">Information Architecture for Platform-to-Data systems</p>
+                <p class="download-note">Click to download PDF</p>
+            </div>
+            
+            <div class="architecture-card" onclick="downloadArchitecture()">
+                <i class='bx bxs-network-chart architecture-icon'></i>
+                <h2 class="architecture-name">Cloud Integration</h2>
+                <p class="architecture-desc">Hybrid cloud deployment architecture</p>
+                <p class="download-note">Click to download PDF</p>
+            </div>
+            
+            <div class="architecture-card" onclick="downloadArchitecture()">
+                <i class='bx bxs-data architecture-icon'></i>
+                <h2 class="architecture-name">Data Pipeline</h2>
+                <p class="architecture-desc">Real-time data processing framework</p>
+                <p class="download-note">Click to download PDF</p>
+            </div>
+            
+            <div class="architecture-card" onclick="downloadArchitecture()">
+                <i class='bx bxs-shield-alt architecture-icon'></i>
+                <h2 class="architecture-name">Security Framework</h2>
+                <p class="architecture-desc">Zero-trust security architecture</p>
+                <p class="download-note">Click to download PDF</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function downloadArchitecture() {
+            // Create a temporary anchor element
+            const link = document.createElement('a');
+            link.href = 'P2D IA.pdf'; // Make sure this PDF is in your project directory
+            link.download = 'P2D IA Architecture.pdf'; // Name of the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Alternative method if the above doesn't work in all browsers
+            // window.location.href = 'P2D IA.pdf';
+        }
+    </script>
+</body>
+</html>
