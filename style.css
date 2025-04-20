@@ -1959,10 +1959,7 @@ form textarea {
 @media only screen and (max-width: 600px) {
 
 
-  #header {
-      background-image: url(images/dp.jpg);
-
-  }
+  
 
 
   .setdiv {
@@ -2801,10 +2798,7 @@ form textarea {
 @media (min-width: 601px) and (max-width: 1024px) {
 
 
-  #header {
-
-      background-image: url(images/dp.jpg);
-  }
+  
 
 
 
